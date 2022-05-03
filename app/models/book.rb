@@ -1,3 +1,3 @@
 class Book < ApplicationRecord
-has_one :author
+has_many :authors, dependent: :destroy
 end
